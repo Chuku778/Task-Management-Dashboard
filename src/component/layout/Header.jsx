@@ -1,13 +1,20 @@
-function Header() {
-  return (
-    <div className="flex justify-between items-center bg-white px-6 py-4 shadow">
-      <h1 className="text-lg font-semibold">Hello,Chuku Joy</h1>
+import { Menu } from "lucide-react";
 
-      <div className="flex gap-4 items-center">
-        {/* <div className="w-8 h-8 bg-gray-300 rounded-full"></div> */}
-      </div>
+const Header = ({ toggleSidebar }) => {
+  return (
+    <div className="bg-white shadow-md p-4 flex items-center justify-between">
+      
+   
+      <button
+        onClick={toggleSidebar}
+        className="md:hidden text-2xl"
+      >
+        <Menu />
+      </button>
+
+      <h1 className="font-bold text-lg">Task Manager</h1>
     </div>
   );
-}
+};
 
 export default Header;

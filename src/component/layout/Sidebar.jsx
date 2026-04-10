@@ -49,19 +49,7 @@ const Sidebar = () => {
           Team
         </NavLink>
 
-        <NavLink
-          to="/settings"
-          className={({ isActive }) =>
-            `flex items-center gap-3 p-2 rounded-lg ${
-              isActive
-                ? "bg-blue-500 text-white"
-                : "text-gray-600 hover:bg-gray-100"
-            }`
-          }
-        >
-          <FaCog />
-          Settings
-        </NavLink>
+       
       </nav>
     </div>
   );

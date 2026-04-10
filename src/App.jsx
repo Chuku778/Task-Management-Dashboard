@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import Layout from "./component/layout/Layout";
 import Team from "./pages/Team";
-import Settings from "./pages/Settings";
+
 
 function App() {
   const [tasks, setTasks] = useState(() => {

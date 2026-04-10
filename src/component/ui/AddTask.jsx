@@ -103,7 +103,7 @@ const AddTask = ({ onAdd, teamMembers = [] }) => {
         ))}
       </select>
 
-      {/* Deadline */}
+  
       <input
         type="date"
         value={deadline}
